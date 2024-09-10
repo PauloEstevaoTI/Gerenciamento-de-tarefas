@@ -134,13 +134,12 @@ export const login = async (req, res) => {
         userId: user.id
       }, JWT_SECRET);
     
-    res.json({user, token});
-
-    
+    res.json({user, token});  
 
 }
 
 export const me = async (req, res) => {
+
     res.json(req.user);
 }
 
